@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+     <!-- load p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  <!-- load ml5.js -->
+  <script src="https://unpkg.com/ml5@0.2.3/dist/ml5.min.js" type="text/javascript"></script>
+    
+    
+    
+    
+    <!--unity -->
+    
+<script src="TemplateData/UnityProgress.js"></script>
+<script src="Build/UnityLoader.js"></script>
+     <script src="UnityInterface.js"></script>
+
+ <!-- keep the video in center of browser -->
+  <style type="text/css">
+    body{
+      text-align: center;
+    }
+      p{
+          z-index:100 !important;
+      }
+      
+.box{
+        width:500;
+        height:500;            
+        position: absolute;
+        top: 100;
+        left: 600;
+        opacity: 0.8;  /* for demo purpose  */
+    }      
+      
+  </style>
+</head>
+<body>
+  <h1>PoseNet-UNITY demo with Ml5.js</h1>
+  <p id="status">Loading Model...</p>
+  <div>
+    
+    <div id="unityContainer" style="width: 500px; height: 500px"></div>
+    
+    <div class="box" id="videoContainer">
+    </div>
+      
+      
+      </div>
+  <!-- load the posenet.js file -->
+  <script src="index.js"></script>
+    
+   
+    
+</body>
+</html>
